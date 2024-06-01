@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,100;8..30,200&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+nav ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: black;
+    color: aliceblue;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'piazzolla', sans-serif;
+}
+
+.gamecontainer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    -webkit-box-shadow: 12px 12px 24px #9499a8, -12px -12px -24px #ffffff;
+    box-shadow: 20px 26px 30px 16px #7a7c83;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'piazzolla', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.copy {
+    bottom: 0;
+    margin-top: 70%;
+    opacity: 0.3;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: skyblue;
+}
+
+.gameinfo {
+    padding: 0 34px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info {
+    font-size: 25px;
+    font-family: 'piazzolla', sans-serif;
+}
+
+#win {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 30px;
+    opacity: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+h1 span {
+    color: red;
+    box-shadow: 5px 16px 14px black;
+
+}
+
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(236, 195, 236);
+    font-family: 'piazzolla', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* responsive */
+
+@media(max-width:768px) {
+
+    .gamecontainer {
+        font-size: 25px;
+        height: 61vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gameinfo h1 {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gameinfo {
+        padding: 0;
+        margin-top: 22px;
+    }
+
+    .box {
+        height: auto;
+        font-size: 30px;
+        width: auto;
+    }
+
+    h1 span {
+        color: red;
+        box-shadow: 5px 16px 14px white
+    }
+
+    .copy {
+        font-size: 10px;
+        opacity: 0.5;
+        color: black;
+        font-weight: bold;
+        bottom: 0;
+        margin-top: 40%;
+    }
+
+    #win {
+        margin-top: 50px;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        width: 150px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+
+}
